@@ -27,11 +27,11 @@ class ChildComponent extends Component {
     console.log("I've just been updated");
     // console.log(prevProps, this.props);
     // console.log(prevState, this.state);
-    if (prevProps.colors !== this.props.color) {
-      // do something
+    if (prevProps.color !== this.props.color) {
+      console.log(`Color was changed from "${prevProps.color}" to "${this.props.color}"`);
     }
     if (prevState.count !== this.state.count) {
-      // do something else
+      console.log(`Count was changed from ${prevState.count} to ${this.state.count}`);
     }
   }
 
